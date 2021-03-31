@@ -2,3 +2,13 @@
 Description: Styles for the section element.
 Author: Anna Kyles
 */
+
+.section {
+    padding: 100px 0;
+}
+hr {
+    width: 30px;
+    margin: 25px auto;
+    border: 0;
+    border-top: 2px white solid;
+}

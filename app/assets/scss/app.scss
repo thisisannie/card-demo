@@ -3,7 +3,9 @@ Description: SCSS files to compile.
 Author: Anna Kyles
 */
 
+@import "reset";
 @import "_variables";
+@import "general";
 @import "section";
 @import "fonts";
 @import "cards";
