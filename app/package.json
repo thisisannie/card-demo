@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "node-sass -w app/assets/scss/ -o app/assets/css/ --output-style compressed"
+    "watch": "node-sass -w assets/scss/ -o assets/css/ --output-style compressed"
   },
   "repository": {
     "type": "git",
