@@ -3,8 +3,13 @@ Description: Styles for cards.
 Author: Anna Kyles
 */
 
+.cards {
+    margin-bottom: -$spacer;
+}
+
 .card {
-    border-radius: 7px 7px 0 0;
+    margin-bottom: $spacer;
+    border-radius: 5px 5px 0 0;
     background-color: black;
     overflow: hidden;
     &--banner {
@@ -26,6 +31,17 @@ Author: Anna Kyles
         }
         &--text {
             margin-bottom: $spacer-small;
+            .more {
+                display: block;
+                max-height: 0px;
+                opacity: 0;
+                overflow: hidden;
+                transition: $transition;
+                &.active {
+                    opacity: 1;
+                    max-height: 300px;
+                }
+            }
         }
         &--trigger-more {
             position: relative;
@@ -35,6 +51,7 @@ Author: Anna Kyles
             margin: $spacer-small auto 0;
             border-radius: 50%;
             background-color: $gunmetal-grey;
+            cursor: pointer;
 
             &::after {
                 content: "";
@@ -48,7 +65,7 @@ Author: Anna Kyles
                 transform: rotate(0deg);
                 transition: $transition;
             }
-            &.open {
+            &.active {
                 &::after {
                     background: url(../images/line.svg) no-repeat scroll center center;
                     transform: rotate(180deg);
